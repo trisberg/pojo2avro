@@ -1,4 +1,4 @@
-tuple2avro
-==========
+pojo2avro
+=========
 
-Test project for writing XD Tuples to HDFS in Avro format
+Test project for writing XD POJOs to HDFS in Avro format
