@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.springdeveloper.hadoop</groupId>
+	<artifactId>pojo2avro</artifactId>
+	<version>0.1.0</version>
+	<packaging>jar</packaging>
+	<name>PojoAvroApp</name>
+	<description>Simple Spring driven Pojo to Avro App</description>
+
+	<properties>
+		<maven.test.failure.ignore>true</maven.test.failure.ignore>
+		<spring.framework.version>3.2.4.RELEASE</spring.framework.version>
+		<spring.hadoop.version>1.0.1.RELEASE-cdh4</spring.hadoop.version>
+		<hadoop.version>2.0.0-cdh4.3.1</hadoop.version>
+		<cdk-version>0.7.1-SNAPSHOT</cdk-version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${spring.framework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-hadoop</artifactId>
+			<version>${spring.hadoop.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-client</artifactId>
+			<version>${hadoop.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.14</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy</artifactId>
+			<version>1.8.5</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- XD -->
+		<dependency>
+			<groupId>org.springframework.xd</groupId>
+			<artifactId>spring-xd-tuple</artifactId>
+			<version>1.0.0.M3</version>
+			<exclusions>
+			  <exclusion>
+				<groupId>org.springframework.batch</groupId>
+				<artifactId>spring-batch-infrastructure</artifactId>
+			  </exclusion>
+			  <exclusion>
+				<groupId>org.springframework.integration</groupId>
+				<artifactId>spring-integration-core</artifactId>
+			  </exclusion>
+			</exclusions> 
+ 		</dependency>
+
+		<!-- CDK -->
+		<dependency>
+			<groupId>com.cloudera.cdk</groupId>
+			<artifactId>cdk-data-core</artifactId>
+			<version>${cdk-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.cloudera.cdk</groupId>
+			<artifactId>cdk-data-hcatalog</artifactId>
+			<version>${cdk-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>11.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.avro</groupId>
+			<artifactId>avro</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hcatalog</groupId>
+			<artifactId>hcatalog-core</artifactId>
+			<version>0.5.0-cdh4.3.0</version>
+		</dependency>
+
+		<!-- Test -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.framework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.7</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>spring-repo</id>
+			<name>Spring Milestone Releases</name>
+			<url>http://repo.spring.io/libs-milestone</url>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build> 
+</project>
+
