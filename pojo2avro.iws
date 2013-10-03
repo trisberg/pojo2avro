@@ -2,16 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a70f64a0-508d-43f6-82c0-9b578ca84b18" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/springframework/data/hadoop/pojo/PojoAvroTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetOperations.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetReader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetRepositoryCallback.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetRepositoryFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetWriter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/springframework/data/hadoop/pojo/PojoAvroTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/springframework/data/hadoop/pojo/PojoAvroTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/spring/application-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring/application-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pojo2avro.iws" afterPath="$PROJECT_DIR$/pojo2avro.iws" />
     </list>
     <ignored path="pojo2avro.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380733263414" ignored="false" />
-    <file path="/PojoAvroTest.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380739278676" ignored="false" />
+    <file path="/Dummy.txt" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380742816912" ignored="false" />
+    <file path="/PojoAvroTest.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380765021274" ignored="false" />
     <file path="/DatasetTemplate.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380739142218" ignored="false" />
-    <file path="/application-context.xml" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380736581387" ignored="false" />
+    <file path="/application-context.xml" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380757267934" ignored="false" />
     <file path="$PROJECT_DIR$/../tuple2avro/src/main/java/com/springdeveloper/hadoop/TupleAvroApp.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380737628383" ignored="false" />
     <file path="/PojoCallback.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380738857652" ignored="false" />
+    <file path="$PROJECT_DIR$/../tuple2avro/src/main/java/com/springdeveloper/hadoop/MapAvroApp.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380755001430" ignored="false" />
+    <file path="/MapAvroApp.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380754896618" ignored="false" />
+    <file path="$PROJECT_DIR$/../../cloudera/cdk/pom.xml" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380742819275" ignored="false" />
+    <file path="$PROJECT_DIR$/../../cloudera/cdk/cdk-data/cdk-data-core/src/main/java/com/cloudera/cdk/data/PartitionExpression.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380742819275" ignored="false" />
+    <file path="$PROJECT_DIR$/../../cloudera/cdk/cdk-data/cdk-data-core/src/main/java/com/cloudera/cdk/data/DatasetWriter.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380742819275" ignored="false" />
+    <file path="$PROJECT_DIR$/../../cloudera/cdk/cdk-data/cdk-data-core/src/main/java/com/cloudera/cdk/data/filesystem/FileSystemDatasetWriter.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380742819275" ignored="false" />
+    <file path="$PROJECT_DIR$/../../cloudera/cdk/cdk-data/cdk-data-core/src/main/java/com/cloudera/cdk/data/PartitionStrategy.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380742819275" ignored="false" />
+    <file path="$PROJECT_DIR$/../../cloudera/cdk/cdk-data/cdk-data-core/src/main/java/com/cloudera/cdk/data/filesystem/PartitionedDatasetWriter.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380742819275" ignored="false" />
+    <file path="$PROJECT_DIR$/../../cloudera/cdk/cdk-data/cdk-data-core/src/main/java/com/cloudera/cdk/data/filesystem/ParquetFileSystemDatasetWriter.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380742819275" ignored="false" />
+    <file path="/a.dummy" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380742862909" ignored="false" />
+    <file path="/DatasetRepositoryFactory.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380757239354" ignored="false" />
+    <file path="/fragment.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380756925221" ignored="false" />
+    <file path="/DatasetWriter.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380755930317" ignored="false" />
+    <file path="/DatasetOperationsFactory.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380756794145" ignored="false" />
+    <file path="/DatasetRepositoryCallback.java" changelist="a70f64a0-508d-43f6-82c0-9b578ca84b18" time="1380756653153" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,14 +228,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PojoAvroTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PojoAvroTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/data/hadoop/pojo/PojoAvroTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="65" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.3340249">
+            <state line="19" column="34" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1610#1802#0" expanded="true" />
-                <element signature="e#1794#1795#0" expanded="true" />
+                <element signature="e#1721#1901#0" expanded="true" />
+                <element signature="e#1896#1897#0" expanded="true" />
+                <element signature="e#1987#2161#0" expanded="true" />
+                <element signature="e#2156#2157#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatasetRepositoryFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetRepositoryFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="0" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatasetReader.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="75" selection-start="600" selection-end="600" vertical-scroll-proportion="0.6182213">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,16 +277,16 @@
       <file leaf-file-name="application-context.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/application-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+            <state line="21" column="0" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hadoop.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/hadoop.properties">
+      <file leaf-file-name="DatasetRepositoryCallback.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetRepositoryCallback.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
+            <state line="8" column="4" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -249,7 +295,29 @@
       <file leaf-file-name="DatasetTemplate.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="48" selection-start="1689" selection-end="1689" vertical-scroll-proportion="0.0">
+            <state line="79" column="0" selection-start="1644" selection-end="1905" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatasetOperations.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetOperations.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatasetWriter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetWriter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="44" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -289,12 +357,18 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/application-context.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/hadoop.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/springdeveloper/hadoop/Address.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/PojoCallback.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetTemplate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetRepositoryCallback.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetOperationsFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetRepositoryFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/application-context.xml" />
         <option value="$PROJECT_DIR$/src/test/java/org/springframework/data/hadoop/pojo/PojoAvroTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetOperations.java" />
       </list>
     </option>
   </component>
@@ -542,6 +616,9 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.springframework.data.hadoop.pojo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
@@ -823,13 +900,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/application-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hadoop.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
@@ -853,7 +923,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="48" selection-start="1689" selection-end="1689" vertical-scroll-proportion="0.0">
+        <state line="79" column="0" selection-start="1644" selection-end="1905" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetRepositoryCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="4" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/application-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetRepositoryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -862,11 +964,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/data/hadoop/pojo/PojoAvroTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="65" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.3340249">
+        <state line="19" column="34" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1610#1802#0" expanded="true" />
-            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1721#1901#0" expanded="true" />
+            <element signature="e#1896#1897#0" expanded="true" />
+            <element signature="e#1987#2161#0" expanded="true" />
+            <element signature="e#2156#2157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="44" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/data/hadoop/pojo/DatasetReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="75" selection-start="600" selection-end="600" vertical-scroll-proportion="0.6182213">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

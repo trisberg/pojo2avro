@@ -13,9 +13,12 @@
 		fs.defaultFS=${hd.fs}
 	</configuration>
 
-    <beans:bean class="org.springframework.data.hadoop.pojo.DatasetTemplate">
+    <beans:bean id="dsFactory" class="org.springframework.data.hadoop.pojo.DatasetRepositoryFactory">
         <beans:property name="conf" ref="hadoopConfiguration"/>
         <beans:property name="basePath" value="/tmp/data"/>
+    </beans:bean>
+    <beans:bean class="org.springframework.data.hadoop.pojo.DatasetOperations">
+        <beans:property name="datasetRepositoryFactory" ref="dsFactory"/>
     </beans:bean>
 
 </beans:beans>

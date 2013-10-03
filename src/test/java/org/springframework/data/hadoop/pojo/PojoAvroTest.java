@@ -1,5 +1,6 @@
 package org.springframework.data.hadoop.pojo;
 
+import com.cloudera.cdk.data.DatasetRepository;
 import com.springdeveloper.hadoop.Address;
 import com.springdeveloper.hadoop.Customer;
 import org.junit.Test;
@@ -16,7 +17,7 @@ import java.util.Collections;
 public class PojoAvroTest {
 
 	@Autowired
-	DatasetTemplate dsTemplate;
+	DatasetOperations dsOperations;
 
 	@Test
 	public void testWritePojos() {
@@ -38,29 +39,33 @@ public class PojoAvroTest {
 		c2.setAddresses(Collections.singletonList(a2));
 		System.out.println("WRITE: " + c1.getClass().getName() + " :: " + c1);
 		System.out.println("WRITE: " + c2.getClass().getName() + " :: " + c2);
-		dsTemplate.write(Arrays.asList(new Customer[] {c1, c2}));
+		dsOperations.getDatasetWriter().write(Arrays.asList(new Customer[]{c1, c2}));
 	}
 
 	@Test
 	public void testReadPojos() {
-		for (Customer c : dsTemplate.read(Customer.class)) {
+		for (Customer c : dsOperations.getDatasetReader().read(Customer.class)) {
 			System.out.println("READ: " + c.getClass().getName() + " :: " + c);
 		}
 	}
 
 	@Test
 	public void testReadWithCallback() {
-	    dsTemplate.read(Customer.class, new PojoCallback<Customer, Object>() {
-		    public Object doInPojo(Customer c) {
-			    System.out.println("CALLBACK: " + c.getClass().getName() + " :: " + c);
+		dsOperations.getDatasetReader().read(Customer.class, new PojoCallback<Customer, Object>() {
+			public Object doInPojo(Customer c) {
+				System.out.println("CALLBACK: " + c.getClass().getName() + " :: " + c);
 				return null;
-		    }
-	    });
+			}
+		});
 	}
 
 	@Test
 	public void testDeletePojos() {
-		dsTemplate.delete(Customer.class);
+		dsOperations.execute(Customer.class, new DatasetRepositoryCallback() {
+			public void doInRepository(DatasetRepository datasetRepository, String datasetName) {
+				datasetRepository.delete(datasetName);
+			}
+		});
 	}
 
 }
